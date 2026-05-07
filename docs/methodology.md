@@ -9,7 +9,7 @@ The goal is to enable fast experimentation, dataset‑driven customization, and 
 ## 2. Fine‑Tuning Approaches
 
 ### 2.1 LoRA (Low‑Rank Adaptation)
-- Lightweight and GPU‑efficient  
+- Lightweight and GPU‑efficient
 - Injects trainable low‑rank matrices into attention layers  
 - Ideal for styles, characters, and product-specific fine‑tuning  
 
