@@ -28,3 +28,61 @@ The goal is to enable fast experimentation, dataset‑driven customization, and 
 ## 3. Dataset Preparation
 
 ### 3.1 Folder Structure
+
+### 3.2 Requirements
+- Recommended resolution: **512×512** or **768×768**  
+- Consistent lighting and framing improves results  
+- Remove duplicates and blurry images  
+- 10–100 images depending on method  
+
+---
+
+## 4. Training Pipeline
+
+### 4.1 Steps
+1. Load base model (e.g., `runwayml/stable-diffusion-v1-5` or SDXL)  
+2. Preprocess dataset (resize, crop, normalize)  
+3. Load training configuration (`config.yaml`)  
+4. Select method (LoRA / DreamBooth / Textual Inversion)  
+5. Train using HuggingFace Diffusers + Accelerate  
+6. Save outputs:  
+   - LoRA weights (`.safetensors`)  
+   - DreamBooth model folder  
+   - Textual inversion embeddings (`.pt`)  
+
+---
+
+## 5. Evaluation
+
+### 5.1 Metrics
+- Prompt‑to‑image alignment  
+- Identity preservation (DreamBooth)  
+- Style fidelity (LoRA/TI)  
+- Negative prompt robustness  
+- Inference quality  
+
+### 5.2 Visual Tests
+- Fixed prompt comparisons  
+- Style transfer tests  
+- Variation sampling  
+- Negative prompt stress tests  
+
+---
+
+## 6. Roadmap
+- [ ] Add training scripts (`src/train.py`)  
+- [ ] Add dataset loader (`src/dataset.py`)  
+- [ ] Add LoRA training notebook  
+- [ ] Add DreamBooth training notebook  
+- [ ] Add inference demo notebook  
+- [ ] Add example outputs  
+- [ ] Add benchmarking results  
+
+---
+
+## 7. References
+- HuggingFace Diffusers  
+- LoRA: Hu et al., 2021  
+- DreamBooth: Ruiz et al., 2022  
+- Textual Inversion: Gal et al., 2022  
+
