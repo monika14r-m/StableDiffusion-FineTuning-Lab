@@ -81,6 +81,7 @@ data/
 ---
 
 ## 6. Roadmap
+- [x] Add methodology.md  
 - [ ] Add training scripts (`src/train.py`)  
 - [ ] Add dataset loader (`src/dataset.py`)  
 - [ ] Add LoRA training notebook  
@@ -89,11 +90,15 @@ data/
 - [ ] Add example outputs  
 - [ ] Add benchmarking results  
 
+
 ---
 
 ## 7. References
 - HuggingFace Diffusers  
 - LoRA: Hu et al., 2021  
 - DreamBooth: Ruiz et al., 2022  
-- Textual Inversion: Gal et al., 2022  
+- Textual Inversion: Gal et al., 2022
+- https://arxiv.org/abs/2106.09685
+- https://arxiv.org/abs/2208.12242
+- https://arxiv.org/abs/2208.01618
 
