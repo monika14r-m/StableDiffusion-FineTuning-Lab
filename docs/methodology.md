@@ -28,6 +28,17 @@ The goal is to enable fast experimentation, dataset‑driven customization, and 
 ## 3. Dataset Preparation
 
 ### 3.1 Folder Structure
+### 3.1 Folder Structure
+data/
+   medical/
+      img1.png
+      img2.png
+   satellite/
+      img1.png
+      img2.png
+   fashion/
+      img1.png
+      img2.png
 
 ### 3.2 Requirements
 - Recommended resolution: **512×512** or **768×768**  
