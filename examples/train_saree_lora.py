@@ -1,0 +1,36 @@
+# Train LoRA for Saree Design Embedding
+# -------------------------------------
+
+from diffusers import StableDiffusionPipeline
+from peft import LoraConfig, get_peft_model
+import torch
+import os
+
+# Load base model
+base_model = "runwayml/stable-diffusion-v1-5"
+pipe = StableDiffusionPipeline.from_pretrained(
+    base_model,
+    torch_dtype=torch.float16
+).to("cuda")
+
+# Load LoRA config
+lora_config = LoraConfig(
+    r=8,
+    lora_alpha=16,
+    target_modules=["cross_attention"],
+    lora_dropout=0.05,
+    bias="none",
+    task_type="TEXT_TO_IMAGE"
+)
+
+# Attach LoRA
+pipe.unet = get_peft_model(pipe.unet, lora_config)
+
+# Training loop placeholder
+train_data_dir = "data/sarees"
+output_dir = "outputs/lora_saree"
+
+os.makedirs(output_dir, exist_ok=True)
+
+print(f"Ready to train on {train_data_dir} and save to {output_dir}")
+# TODO: Add dataset loader + training loop
