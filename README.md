@@ -6,7 +6,7 @@ Originally developed while building AIRAA to experiment with improving fashion-o
 
 ---
 
-## Why This Project Exists
+# Why This Project Exists
 
 General-purpose diffusion models often struggle with:
 
@@ -20,7 +20,7 @@ This project explores fine-tuning and reconstruction pipelines to improve genera
 
 ---
 
-## Core Features
+# Core Features
 
 * Stable Diffusion fine-tuning workflows
 * Domain-specific dataset experimentation
@@ -32,7 +32,7 @@ This project explores fine-tuning and reconstruction pipelines to improve genera
 
 ---
 
-## Tech Stack
+# Tech Stack
 
 * Python
 * PyTorch
@@ -43,13 +43,13 @@ This project explores fine-tuning and reconstruction pipelines to improve genera
 
 ---
 
-## Repository Structure
+# Repository Structure
 
 ```bash
 api/            API experiments
 configs/        Training configurations
 data/           Dataset handling
-docs/           Documentation
+docs/            Documentation
 examples/       Example workflows
 notebooks/      Research notebooks
 src/            Core implementation
@@ -57,7 +57,27 @@ src/            Core implementation
 
 ---
 
-## Current Focus
+# Workflow Overview
+
+1. Dataset collection and preprocessing
+2. Domain-specific fine-tuning
+3. Diffusion-based reconstruction
+4. Evaluation and benchmarking
+5. Iterative refinement for AIRAA workflows
+
+---
+
+# Sample Outputs
+
+| Task                    | Preview                   |
+| ----------------------- | ------------------------- |
+| Ethnic saree generation | *(add output image here)* |
+| Fabric reconstruction   | *(add output image here)* |
+| Diffusion enhancement   | *(add output image here)* |
+
+---
+
+# Current Focus
 
 * improving generation consistency
 * dataset optimization
@@ -67,7 +87,7 @@ src/            Core implementation
 
 ---
 
-## Future Improvements
+# Future Improvements
 
 * LoRA integration
 * automated evaluation pipelines
@@ -77,6 +97,6 @@ src/            Core implementation
 
 ---
 
-## Status
+# Status
 
 Actively evolving research and experimentation repository.
